@@ -9,6 +9,8 @@ import autoprefixer from 'gulp-autoprefixer'
 import bulkSass from 'gulp-sass-bulk-import'
 import newer from 'gulp-newer'
 
+import pug from 'gulp-pug'
+
 gulp.task('default', [], () => {
   return console.log('gulp ran.');
 });
@@ -30,4 +32,19 @@ gulp.task('sass', [], () => {
     cascade: false
   }))
   .pipe(gulp.dest(config.build.stylesheets))
+});
+
+
+/**
+ * Pug Compile Task
+ */
+gulp.task('pug', () => {
+  return gulp.src([
+    config.source.html + '**/*.pug',
+    '!' + config.source.html + '**/_*.pug'
+  ])
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest(config.build.html))
 });

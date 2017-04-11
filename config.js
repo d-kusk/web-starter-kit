@@ -1,9 +1,11 @@
 module.exports = {
   source: {
+    html: 'source/pug/',
     stylesheets: 'source/sass/',
     javascripts: 'source/javascript/'
   },
   build: {
+    html: '/',
     stylesheets: 'assets/stylesheet/',
     javascripts: 'assets/javascript/'
   },

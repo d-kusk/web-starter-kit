@@ -2,12 +2,18 @@ module.exports = {
   source: {
     html: 'source/pug/',
     stylesheets: 'source/sass/',
-    javascripts: 'source/javascript/'
+    javascripts: {
+      path: 'source/javascript/',
+      fileName: 'application'
+    }
   },
   build: {
-    html: '/',
+    html: './',
     stylesheets: 'assets/stylesheet/',
-    javascripts: 'assets/javascript/'
+    javascripts: {
+      path: 'assets/javascript/',
+      fileName: 'application.js'
+    }
   },
   browsers: [
     '> 1%',

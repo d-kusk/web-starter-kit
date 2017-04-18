@@ -11,7 +11,9 @@ import newer from 'gulp-newer'
 
 import pug from 'gulp-pug'
 
-import webpack from 'webpack-stream'
+import webpack from 'webpack'
+import webpackStream from 'webpack-stream'
+import webpackConfig from './webpack.config.babel.js'
 
 gulp.task('default', [], () => {
   return console.log('gulp ran.');
@@ -56,9 +58,6 @@ gulp.task('pug', () => {
  * Task to Transpile ES2015 with Babel
  */
 gulp.task('webpack', () => {
-  return gulp.src([
-    config.source.javascripts.path + config.source.javascripts.fileName
-  ])
-  .pipe(webpack( require('./webpack.config.babel.js') ))
+  return webpackStream(webpackConfig, webpack)
   .pipe(gulp.dest(config.build.javascripts.path));
 });

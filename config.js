@@ -4,7 +4,7 @@ module.exports = {
     stylesheets: 'source/sass/',
     javascripts: {
       path: 'source/javascript/',
-      fileName: 'application.js'
+      fileName: 'application'
     }
   },
   build: {

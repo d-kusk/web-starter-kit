@@ -6,17 +6,14 @@ module.exports = {
   entry: path.join(__dirname, config.source.javascripts.path + config.source.javascripts.fileName),
   output: {
     path: path.join(__dirname, config.build.javascripts.path),
-    filename: '[name].js'
+    filename: config.build.javascripts.fileName
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
-        }
+        use: 'babel-loader',
       }
     ]
   },

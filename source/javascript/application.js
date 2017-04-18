@@ -1,6 +1,6 @@
-import movebox from './_movebox';
+import sample from './_sample';
 
-movebox();
+sample();
 
 let newFunc = (val) => {
   console.log(val)

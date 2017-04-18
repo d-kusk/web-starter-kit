@@ -16,7 +16,10 @@ import webpackStream from 'webpack-stream'
 import webpackConfig from './webpack.config.babel.js'
 
 gulp.task('default', [], () => {
-  return console.log('gulp ran.');
+  console.log('gulp run.');
+
+  gulp.watch(config.source.stylesheets + '**/*.scss', ['sass']);
+  gulp.watch(config.source.javascripts.path + '**/*.js', ['webpack']);
 });
 
 

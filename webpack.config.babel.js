@@ -8,6 +8,9 @@ module.exports = {
     path: path.join(__dirname, config.build.javascripts.path),
     filename: config.build.javascripts.fileName
   },
+  resolve: {
+    extensions: ['.js']
+  },
   module: {
     rules: [
       {

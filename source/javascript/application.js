@@ -1,10 +1,8 @@
-let func = function(val){
-  console.log(val);
-}
+import movebox from './_movebox';
+
+movebox();
 
 let newFunc = (val) => {
   console.log(val)
 }
-
-func('hoge');
 newFunc('piyo');

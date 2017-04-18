@@ -8,7 +8,7 @@ module.exports = {
     }
   },
   build: {
-    html: '/',
+    html: './',
     stylesheets: 'assets/stylesheet/',
     javascripts: {
       path: 'assets/javascript/',

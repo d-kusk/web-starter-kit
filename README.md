@@ -10,7 +10,7 @@
 - webpack 2
 - gulp
 - editorconfig
-- <a href="https://yarnpkg.com/en/" tartget="_blank">Yarn</a>
+- [Yarn](https://yarnpkg.com/en/)
 
 ## Install
 

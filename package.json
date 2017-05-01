@@ -24,6 +24,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sass-bulk-import": "^1.0.1",
     "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0",
     "path": "^0.12.7",
     "require-dir": "^0.3.1",
     "webpack": "^2.4.1",

@@ -23,7 +23,8 @@ gulp.task('sass', () => {
   .pipe(sass({
       includePaths: [
         './node_modules/../',
-        require('node-bourbon').includePaths
+        require('node-bourbon').includePaths,
+        require('node-neat').includePaths
       ]
   }))
   .pipe(autoprefixer({

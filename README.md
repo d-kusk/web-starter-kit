@@ -3,7 +3,8 @@
 ## Features
 
 - Sass(.scss)
-    + Bourbongit
+    + Bourbon
+    + Neat
 - ES2015+ (Babel)
 - pug
 

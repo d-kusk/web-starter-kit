@@ -653,6 +653,10 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bourbon-neat@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/bourbon-neat/-/bourbon-neat-2.0.0.tgz#16079272c3941e767da041e75ee86cf4d5ab4c9e"
+
 bourbon@^4.2.6:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-4.3.3.tgz#c51cb80c6a437aa55c16659597e5c4a86884ea38"
@@ -2424,6 +2428,12 @@ node-libs-browser@^2.0.0:
     url "^0.11.0"
     util "^0.10.3"
     vm-browserify "0.0.4"
+
+node-neat@^2.0.0-beta.0:
+  version "2.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/node-neat/-/node-neat-2.0.0-beta.0.tgz#d03527f9891625e14aa66168c0fe20ebe3de0a9b"
+  dependencies:
+    bourbon-neat "^2.0.0"
 
 node-notifier@^5.0.1:
   version "5.1.2"

@@ -22,7 +22,8 @@ gulp.task('sass', () => {
   .pipe(bulkSass())
   .pipe(sass({
       includePaths: [
-        './node_modules/../'
+        './node_modules/../',
+        require('node-bourbon').includePaths
       ]
   }))
   .pipe(autoprefixer({

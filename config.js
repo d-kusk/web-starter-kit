@@ -14,8 +14,6 @@ module.exports = {
     stylesheets: 'www/dist/stylesheet/',
     javascripts: {
       path: 'www/dist/javascript/',
-      fileName: 'application.js',
-      fileNameLib: 'lib.min.js',
     }
   },
   browsers: [

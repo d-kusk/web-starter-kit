@@ -5,7 +5,7 @@
   "scripts": {
     "start": "gulp",
     "sass": "gulp sass",
-    "js": "webpack",
+    "js": "webpack --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

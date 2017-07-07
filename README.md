@@ -28,5 +28,21 @@ $ yarn install
 $ yarn start
 ```
 
+### Optional commands
+
+### Compiling for Sass only
+
+```
+$ yarn run sass
+```
+
+### Compiling for JavaScript(ES2015) only
+
+```
+$ yarn run sass
+```
+
+Look at package.json
+
 ## LICENCE
 MIT

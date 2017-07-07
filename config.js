@@ -8,10 +8,10 @@ module.exports = {
     }
   },
   build: {
-    html: './',
-    stylesheets: 'assets/stylesheet/',
+    html: 'www/',
+    stylesheets: 'www/dist/stylesheet/',
     javascripts: {
-      path: 'assets/javascript/',
+      path: 'www/dist/javascript/',
       fileName: 'application.js'
     }
   },

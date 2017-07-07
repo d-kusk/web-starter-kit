@@ -30,16 +30,10 @@ $ yarn start
 
 ### Optional commands
 
-### Compiling for Sass only
-
 ```
-$ yarn run sass
-```
+$ yarn run sass  // Compiling for Sass only
 
-### Compiling for JavaScript(ES2015) only
-
-```
-$ yarn run sass
+$ yarn run js  // Compiling for JavaScript(ES2015) only
 ```
 
 Look at package.json

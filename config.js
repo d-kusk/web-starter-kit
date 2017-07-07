@@ -4,7 +4,9 @@ module.exports = {
     stylesheets: 'source/sass/',
     javascripts: {
       path: 'source/javascript/',
-      fileName: 'application'
+      fileName: 'application',
+      pathLib: 'source/javascript-lib/',
+      fileNameLib: 'lib.js',
     }
   },
   build: {
@@ -12,7 +14,6 @@ module.exports = {
     stylesheets: 'www/dist/stylesheet/',
     javascripts: {
       path: 'www/dist/javascript/',
-      fileName: 'application.js'
     }
   },
   browsers: [

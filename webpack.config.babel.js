@@ -3,10 +3,13 @@ import path from 'path'
 import config from './config'
 
 module.exports = {
-  entry: path.join(__dirname, config.source.javascripts.path + config.source.javascripts.fileName),
+  entry: {
+    application: path.join(__dirname, config.source.javascripts.path + config.source.javascripts.fileName),
+    lib: path.join(__dirname, config.source.javascripts.pathLib + config.source.javascripts.fileNameLib),
+  },
   output: {
     path: path.join(__dirname, config.build.javascripts.path),
-    filename: config.build.javascripts.fileName
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['.js']
@@ -23,9 +26,10 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery'
+      jQuery: 'jquery',
+      jquery: 'jquery'
     }),
-    // new webpack.optimize.UglifyJsPlugin() // 圧縮処理
+    new webpack.optimize.UglifyJsPlugin() // 圧縮処理
   ],
   externals: {
     jquery: 'window.jQuery'

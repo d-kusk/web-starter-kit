@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
-@import "foundation/*";
+@import "foundation/_reset";
+@import "bourbon";
+@import 'vender/*';
 
-.hoge {
-  width: 100%;
-}
+@import '_variables';
+@import "foundation/_fonts";
+@import "_mixin";
+@import "_placeholder";
+
+@import "object/component/*";
+@import "object/project/*";
+@import "object/utility/*";

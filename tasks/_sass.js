@@ -7,6 +7,7 @@ import bulkSass from 'gulp-sass-bulk-import'
 import newer from 'gulp-newer'
 import plumber from 'gulp-plumber'
 import notify from 'gulp-notify'
+import cleancss from 'gulp-clean-css';
 
 import config from '../config'
 
@@ -20,17 +21,12 @@ gulp.task('sass', () => {
   }))
   .pipe(newer(config.build.stylesheets))
   .pipe(bulkSass())
-  .pipe(sass({
-      includePaths: [
-        './node_modules/../',
-        require('node-bourbon').includePaths,
-        require('node-neat').includePaths
-      ]
-  }))
+  .pipe(sass())
   .pipe(autoprefixer({
     browsers: config.browsers,
     cascade: false
   }))
+  .pipe(cleancss())
   .pipe(gulp.dest(config.build.stylesheets));
 
 });

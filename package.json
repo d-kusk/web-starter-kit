@@ -27,13 +27,11 @@
     "gulp-sass": "^3.1.0",
     "gulp-sass-bulk-import": "^1.0.1",
     "imagesloaded": "^4.1.3",
-    "jquery": "1.12.4",
+    "jquery": "^3.2.1",
     "jquery-easing": "^0.0.1",
     "jquery-match-height": "^0.7.2",
     "jquery-tiny-pubsub": "^0.7.1",
     "matchmedia": "^0.1.2",
-    "node-bourbon": "^4.2.8",
-    "node-neat": "^2.0.0-beta.0",
     "path": "^0.12.7",
     "preloadjs": "^0.0.0",
     "require-dir": "^0.3.1",
@@ -44,5 +42,5 @@
     "ua-parser-js": "^0.7.12",
     "webpack": "^2.4.1",
     "webpack-stream": "^3.2.0"
-  }
+  },
 }

@@ -8,6 +8,7 @@ import newer from 'gulp-newer'
 import plumber from 'gulp-plumber'
 import notify from 'gulp-notify'
 import cleancss from 'gulp-clean-css';
+import packageImporter from 'node-sass-package-importer';
 
 import config from '../config'
 
@@ -21,7 +22,11 @@ gulp.task('sass', () => {
   }))
   .pipe(newer(config.build.stylesheets))
   .pipe(bulkSass())
-  .pipe(sass())
+  .pipe(sass({
+    importer: packageImporter({
+      extensions: ['.scss', '.css']
+    })
+  }))
   .pipe(autoprefixer({
     browsers: config.browsers,
     cascade: false
